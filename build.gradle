@@ -50,7 +50,7 @@ tasks.named('test') {
 asciidoctor {
     sourceDir file('src/docs/asciidoc')
     sources {
-        include 'testcontainers-spring-boot-mongodb-tutorial.adoc'
+        include 'tutorial.adoc'
     }
     outputDir file('build/docs')
 }
