@@ -50,9 +50,14 @@ tasks.named('test') {
 asciidoctor {
     sourceDir file('src/docs/asciidoc')
     sources {
-        include 'tutorial.adoc'
+        include 'index.adoc'
     }
     outputDir file('build/docs')
+    resources {
+        from('src/docs/styles') {
+            include '*.css'
+        }
+    }
 }
 
 asciidoctorj {
